@@ -1,0 +1,93 @@
+main {
+    display: flex;
+    flex-direction: column;
+}
+.intro-container {
+    display: flex;
+    width: 100%;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro-picture {
+    max-width: 500px;
+    border-radius: 50%;
+}
+
+.intro-picture-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.socials-container .social-button {
+    border: 2px black solid;
+    border-radius: 14px;
+    box-shadow: inset 0 0 0 0 black;
+    color: black;
+    transition: ease-out 0.1s;
+    padding: 8px;
+    text-decoration: none;
+    text-align: center;
+    max-width: 100px;
+}
+
+.socials-container .social-button:hover {    
+    box-shadow: inset 100px 0 0 0 black;
+    color: white;
+}
+
+.socials-container .social-button.twitter {
+    box-shadow: inset 0 0 0 0 rgb(29, 155, 240);
+}
+
+.socials-container .social-button.twitter:hover {
+    box-shadow: inset 100px 0 0 0 rgb(29, 155, 240);
+}
+
+.socials-container .social-button.github {
+    box-shadow: inset 0 0 0 0 black;
+}
+
+.socials-container .social-button.github:hover {
+    box-shadow: inset 100px 0 0 0 black;
+}
+
+.socials-container .social-button.linkedin {
+    box-shadow: inset 0 0 0 0 rgb(10, 102, 194);
+}
+
+.socials-container .social-button.linkedin:hover {
+    box-shadow: inset 100px 0 0 0 rgb(10, 102, 194);
+}
+
+
+.socials-container .social-button.instagram {
+    box-shadow: inset 0 0 0 0 #7833e6;
+}
+
+.socials-container .social-button.instagram:hover {
+    box-shadow: inset 100px 0 0 0 #7833e6;
+}
+
+.socials-container {
+    display: grid;
+    gap: 16px;
+    grid-row: 1;
+    grid-auto-flow: column;
+    max-width: 500px;
+}
+
+@media only screen and (min-width: 1024px) {
+    .intro-container {
+        display: flex;
+        flex-direction: row;
+        min-height: 100vh;
+    }
+
+    .intro-picture-container {
+        width: 50%;
+    }
+
+}
