@@ -1,0 +1,173 @@
+.experiences-section .section-title {
+    margin: 0;
+    padding: 32px 0;
+}
+    
+.experiences-section .experiences-container {
+        display: flex;
+        flex-direction: row;
+}
+
+.experiences-section .experiences-container .odd-experiences-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.experiences-section .experiences-container .even-experiences-container {
+    display: none;
+}
+
+.experiences-section .experiences-container .odd-experiences-container .experience-item, .experiences-section  .experiences-container .even-experiences-container .experience-item {
+    width: calc(100% - 16px);
+    padding: 8px;
+    max-width: 400px;
+}
+
+.experiences-section .experiences-container .odd-experiences-container .experience-item .dot {
+    display: none;
+}
+
+.experiences-section .experiences-container .odd-experiences-container .experience-item .item-title, .experiences-section .experiences-container .even-experiences-container .experience-item .item-title {
+    font-size: 24px;
+    margin: 0;
+}
+
+.experiences-section .experiences-container .odd-experiences-container .experience-item .item-date, .experiences-section .experiences-container .even-experiences-container .experience-item .item-date {
+    font-size: 18px;
+    margin: 8px 0;
+}
+
+.experiences-section .experiences-container .odd-experiences-container .experience-item .item-text, .experiences-section .experiences-container .even-experiences-container .experience-item .item-date {
+    margin: 0 0 6px 0;
+}
+
+.experiences-section .experiences-container .odd-experiences-container .experience-item .item-text a, .experiences-section .experiences-container .even-experiences-container .experience-item .item-text a {
+    color: black;
+}
+
+.experiences-section .experiences-container .odd-experiences-container .experience-item .item-text .item-link {
+    color: black;
+}
+
+@media only screen and (min-width: 768px) {
+    .experiences-section .experiences-container {
+        margin: 0 32px;
+    }
+
+    .experiences-section .experiences-container .odd-experiences-container .experience-item.hide {
+        display: none;
+    }
+
+    .experiences-section .experiences-container .odd-experiences-container, .experiences-section .experiences-container .even-experiences-container {
+        width: calc(50% - 18px);
+    }
+
+    .experiences-section .experiences-container .odd-experiences-container  .experience-item, .experiences-section .experiences-container .even-experiences-container .experience-item {
+        width: 100%;
+        height: 200px;
+        max-width: 100%;
+    }
+
+    .experiences-section .experiences-container .odd-experiences-container .experience-item.hide, .experiences-section .experiences-container .even-experiences-container .experience-item.hide {
+        height: 120px;
+    }
+
+    .experiences-section .experiences-container .odd-experiences-container .experience-item, .experiences-section .experiences-container .even-experiences-container .experience-item {
+        width: 100%;
+        height: 200px;
+        max-width: 100%;
+    }
+
+    .experiences-section .experiences-container .odd-experiences-container .experience-item .dot, .experiences-section .experiences-container .even-experiences-container .experience-item .dot {
+        display: block;
+        width: 24px;
+        height: 24px;
+        min-width: 24px;
+        background: black;
+        border-radius: 50%;
+        position: relative;
+    }
+
+    .experiences-section .experiences-container .odd-experiences-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding-bottom: 100px;
+    }
+
+    .experiences-section .experiences-container .odd-experiences-container .experience-item, .experiences-section .experiences-container .even-experiences-container .experience-item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .experiences-section .experiences-container .odd-experiences-container .experience-item .content, .experiences-section .experiences-container .even-experiences-container .experience-item .content {
+        flex: 1;
+    }
+
+    .experiences-section .experiences-container .odd-experiences-container .experience-item .dot {
+        left: 22px;
+    }
+
+    .experiences-section .experiences-container .even-experiences-container {
+        display: flex;
+        border-left: solid 2px black;
+        align-self: flex-end;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 100px;
+    }
+
+    .experiences-section .experiences-container .even-experiences-container .experience-item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .experiences-section .experiences-container .even-experiences-container .experience-item .dot {
+        left: -22px;
+    }
+
+    .experiences-section .experiences-container .even-experiences-container .experience-item .content {
+        padding-left: 64px;
+    }
+}
+
+
+@media only screen and (min-width: 1024px) {
+    .experiences-section .experiences-container {
+        margin: 0 64px;
+    }
+
+    .experiences-section .experiences-container .odd-experiences-container .experience-item, .experiences-section .experiences-container .even-experiences-container .experience-item {
+        width: 432px;
+        max-width: 432px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .experiences-section {
+        margin-bottom: 64px;
+    }
+
+    .experiences-section .experiences-container {
+        margin: 0 96px;
+    }
+
+    .experiences-section .experiences-container .odd-experiences-container .experience-item, .experiences-section .experiences-container .even-experiences-container .experience-item {
+        width: 650px;
+        max-width: 650px;
+    }
+
+    .experiences-section .experiences-container .even-experiences-container .experience-item {
+        padding-right: 0;
+    }
+
+
+    .experiences-section .experiences-container .even-experiences-container .experience-item .content {
+        padding-left: 72px;
+    }
+}
