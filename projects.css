@@ -35,8 +35,20 @@
     margin-bottom: 8px;
 }
 
-.projects-section .projects-container .project .project-text-content .project-text {
+.projects-section .projects-container .project .project-text-content .project-text-container {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    height: 150px;
+    text-overflow: ellipsis;
+}
+
+.projects-section .projects-container .project .project-text-content .project-text-container .project-text {
     margin: 0;
+    height: 150px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
 }
 
 @media only screen and (min-width: 1440px) {
