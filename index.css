@@ -233,16 +233,18 @@ main {
 
     .intro-picture-container {
         width: 50%;
+        padding-top: 64px;
+        padding-right: 48px;
     }
 
     .intro-picture {
-        max-width: 450px;
+        max-width: 350px;
         border-radius: 50%;
     }
 
     .intro-container .intro-box {
         max-width: 760px;
-        padding-left: 128px;
+        padding-left: 64px;
     }
 
     .intro-container .intro-box .name {
@@ -282,4 +284,20 @@ main {
         text-align: center;
     }
     
+}
+
+@media only screen and (min-width: 1440px) {
+    .intro-picture-container {
+        width: 50%;
+        padding-top: 64px;
+        padding-right: 128px;
+    }
+
+    .intro-container .intro-box {
+        padding-left: 128px;
+    }
+
+    .intro-picture {
+        max-width: 450px;
+    }
 }
