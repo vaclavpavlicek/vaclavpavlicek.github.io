@@ -36,12 +36,20 @@ main {
     max-width: 550px;
 }
 
+.intro-container .intro-box {
+    padding: 0 20px;
+}
+
+.intro-container .intro-box .intro-text {
+    text-align: justify;
+}
+
 .intro-container .intro-box .name {
     text-align: center;
 }
 
 .intro-picture {
-    max-width: 300px;
+    max-width: 256px;
     border-radius: 50%;
 }
 
@@ -61,6 +69,12 @@ main {
     text-decoration: none;
     text-align: center;
     max-width: 120px;
+    margin-top: 16px;
+    margin-right: 16px;
+}
+
+.socials-container .social-button:last-child {
+    margin-right: 0;
 }
 
 .socials-container .social-button:hover {    
@@ -102,11 +116,11 @@ main {
 }
 
 .socials-container {
-    display: grid;
-    gap: 16px;
-    grid-row: 1;
-    grid-auto-flow: column;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     max-width: 500px;
+    margin: 16px;
 }
 
 .intro-picture {
@@ -115,6 +129,10 @@ main {
     -moz-animation: fadeIn ease 5s;
     -o-animation: fadeIn ease 5s;
     -ms-animation: fadeIn ease 5s;
+}
+
+.intro-interests li {
+    margin: 8px 0;
 }
 
 .scroll-down-button {
@@ -252,6 +270,10 @@ main {
         max-width: 700px;
         text-align: justify;
         text-justify: inter-word;
+        margin: 0;
+    }
+
+    .socials-container {
         margin: 0;
     }
 
