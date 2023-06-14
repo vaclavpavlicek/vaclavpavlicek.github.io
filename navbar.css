@@ -41,6 +41,7 @@
         font-size: 20px;
         font-weight: 700;
         padding: 15px;
+        text-transform: uppercase;
     }
 
     .menu-items .menu-item:hover {

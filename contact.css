@@ -9,4 +9,9 @@
 .contact-text {
     margin-top: 0;
     margin-bottom: 32px;
+    text-align: center;
+}
+
+.contact-section .socials-container {
+    justify-content: center;
 }

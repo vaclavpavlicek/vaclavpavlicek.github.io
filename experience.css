@@ -40,16 +40,17 @@
     margin: 8px 0;
 }
 
-.experiences-section .experiences-container .odd-experiences-container .experience-item .item-text, .experiences-section .experiences-container .even-experiences-container .experience-item .item-date {
+.experiences-section .experiences-container .odd-experiences-container .experience-item .item-text, .experiences-section .experiences-container .even-experiences-container .experience-item .item-text {
     margin: 0 0 6px 0;
+    line-height: 1.75rem;
 }
 
 .experiences-section .experiences-container .odd-experiences-container .experience-item .item-text a, .experiences-section .experiences-container .even-experiences-container .experience-item .item-text a {
-    color: black;
+    color: #222222;
 }
 
 .experiences-section .experiences-container .odd-experiences-container .experience-item .item-text .item-link {
-    color: black;
+    color: #222222;
 }
 
 @media only screen and (min-width: 768px) {
@@ -62,23 +63,15 @@
     }
 
     .experiences-section .experiences-container .odd-experiences-container, .experiences-section .experiences-container .even-experiences-container {
-        width: calc(50% - 18px);
+        width: 50%;
     }
 
     .experiences-section .experiences-container .odd-experiences-container  .experience-item, .experiences-section .experiences-container .even-experiences-container .experience-item {
-        width: 100%;
-        height: 200px;
-        max-width: 100%;
+        height: 250px;
     }
 
     .experiences-section .experiences-container .odd-experiences-container .experience-item.hide, .experiences-section .experiences-container .even-experiences-container .experience-item.hide {
         height: 120px;
-    }
-
-    .experiences-section .experiences-container .odd-experiences-container .experience-item, .experiences-section .experiences-container .even-experiences-container .experience-item {
-        width: 100%;
-        height: 200px;
-        max-width: 100%;
     }
 
     .experiences-section .experiences-container .odd-experiences-container .experience-item .dot, .experiences-section .experiences-container .even-experiences-container .experience-item .dot {
@@ -86,7 +79,7 @@
         width: 24px;
         height: 24px;
         min-width: 24px;
-        background: black;
+        background: #222222;
         border-radius: 50%;
         position: relative;
     }
@@ -95,7 +88,7 @@
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-        padding-bottom: 100px;
+        padding-bottom: 125px;
     }
 
     .experiences-section .experiences-container .odd-experiences-container .experience-item, .experiences-section .experiences-container .even-experiences-container .experience-item {
@@ -114,11 +107,11 @@
 
     .experiences-section .experiences-container .even-experiences-container {
         display: flex;
-        border-left: solid 2px black;
+        border-left: solid 2px #222222;
         align-self: flex-end;
         flex-direction: column;
         align-items: flex-start;
-        padding-top: 100px;
+        padding-top: 125px;
     }
 
     .experiences-section .experiences-container .even-experiences-container .experience-item {
@@ -128,11 +121,11 @@
     }
 
     .experiences-section .experiences-container .even-experiences-container .experience-item .dot {
-        left: -22px;
+        left: -20px;
     }
 
     .experiences-section .experiences-container .even-experiences-container .experience-item .content {
-        padding-left: 64px;
+        padding-left: 32px;
     }
 }
 
