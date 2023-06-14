@@ -59,7 +59,7 @@ main {
     justify-content: center;
 }
 
-.socials-container .social-button {
+.social-button {
     border: 2px black solid;
     border-radius: 14px;
     box-shadow: inset 0 0 0 0 black;
@@ -73,45 +73,60 @@ main {
     margin-right: 16px;
 }
 
-.socials-container .social-button:last-child {
+.social-button:last-child {
     margin-right: 0;
 }
 
-.socials-container .social-button:hover {    
+.social-button:hover {    
     box-shadow: inset 120px 0 0 0 black;
     color: white;
 }
 
-.socials-container .social-button.twitter {
+.social-button.twitter {
     box-shadow: inset 0 0 0 0 rgb(29, 155, 240);
 }
 
-.socials-container .social-button.twitter:hover {
+.social-button.twitter:hover {
     box-shadow: inset 120px 0 0 0 rgb(29, 155, 240);
 }
 
-.socials-container .social-button.github {
+.social-button.github {
     box-shadow: inset 0 0 0 0 black;
 }
 
-.socials-container .social-button.github:hover {
+.social-button.github:hover {
     box-shadow: inset 120px 0 0 0 black;
 }
 
-.socials-container .social-button.linkedin {
+.social-button.gitlab {
+    box-shadow: inset 0 0 0 0 #e24329;
+}
+
+.social-button.gitlab:hover {
+    box-shadow: inset 120px 0 0 0 #e24329;
+}
+
+.social-button.youtube {
+    box-shadow: inset 0 0 0 0 #FF0000;
+}
+
+.social-button.youtube:hover {
+    box-shadow: inset 120px 0 0 0 #FF0000;
+}
+
+.social-button.linkedin {
     box-shadow: inset 0 0 0 0 rgb(10, 102, 194);
 }
 
-.socials-container .social-button.linkedin:hover {
+.social-button.linkedin:hover {
     box-shadow: inset 120px 0 0 0 rgb(10, 102, 194);
 }
 
-
-.socials-container .social-button.instagram {
+.social-button.instagram {
     box-shadow: inset 0 0 0 0 #7833e6;
 }
 
-.socials-container .social-button.instagram:hover {
+.social-button.instagram:hover {
     box-shadow: inset 120px 0 0 0 #7833e6;
 }
 

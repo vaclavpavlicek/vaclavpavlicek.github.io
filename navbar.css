@@ -2,6 +2,12 @@
     display: none;
 }
 
+.main-link {
+    color: black;
+    text-decoration: none;
+    font-size: 32px;
+    font-weight: 700;
+}
 
 @media only screen and (min-width: 1024px) {
     .navbar {
@@ -27,13 +33,6 @@
         flex-direction: column;
         justify-content: center;
         justify-items: center;
-    }
-
-    .main-link {
-        color: black;
-        text-decoration: none;
-        font-size: 32px;
-        font-weight: 700;
     }
 
     .menu-items .menu-item {
