@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="experience.css">
     <link rel="stylesheet" href="projects.css">
     <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="navbar.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400;1,700&display=swap');
     </style>        
@@ -16,6 +17,27 @@
     <title>Václav Pavlíček</title>
   </head>
   <body>
+    <nav class="navbar">
+        <div class="navbar-container">    
+            <div class="main-link-container">
+                <a href="#" class="main-link">Václav Pavlíček &nbsp; &#x1F6F0 &#x1F4BB</a>
+            </div>
+            <div class="menu-items">
+                <button class="menu-item" onclick="scrollToSection('js-about-section')">
+                    About me
+                </button>
+                <button class="menu-item" onclick="scrollToSection('js-experiences-section')">
+                    Experiences
+                </button>
+                <button class="menu-item" onclick="scrollToSection('js-projects-section')">
+                    Projects
+                </button>
+                <button class="menu-item" onclick="scrollToSection('js-contact-section')">
+                    Contact
+                </button>
+            </div>
+        </div>
+    </nav>
     <main>
         <div class="intro-container">
             <div class="intro-wrapper">
@@ -41,12 +63,12 @@
                 </div>
             </div>
             <div class="scroll-down-container">
-                <button class="scroll-down-button" onclick="scrollToAbout()">
+                <button class="scroll-down-button" onclick="scrollToSection('js-about-section')">
                     <img src="./images/arrow_down.svg" alt="arrow_down">
                 </button>
             </div>
         </div>
-        <div class="about-container" id="about-container">
+        <div class="about-container" id="js-about-section">
             <div class="content-container">
                 <h2 class="section-heading">About me</h2>
                 <p>I am a third-year Electronic and Information Engineering student at Imperial College London interested in signal processing, algorithms, electronics and space exploration. Currently, I am undertaking a research placement with <a href="http://alumni.media.mit.edu/~ayush/">Dr Ayush Bhandari</a>. The main goal of the placement is to develop algorithms that improve Unlimited Sampling Framework. In the summer of 2022, I interned at European Space Operations Centre in Darmstadt on a mission INTEGRAL. I developed a mission planning validation tool and also transponder swap scheduling to help to automate the operations processes. I published a <a href="https://doi.org/10.47611/jsr.v12i1.1843" target="_blank">paper</a> about this work. I am open to any opportunites that align with my previously mentioned interests and I am looking for PhD opportunities.</p>
@@ -55,7 +77,7 @@
                 </div>
             </div>            
         </div>
-        <div class="experiences-section">
+        <div class="experiences-section" id="js-experiences-section">
             <h2 class="section-heading">Experiences</h2>
             <div class="experiences-container">
                 <div class="odd-experiences-container">
@@ -110,7 +132,7 @@
                 </div>
             </div>
         </div>
-        <div class="projects-section">
+        <div class="projects-section" id="js-projects-section">
             <h2 class="section-heading">Projects</h2>
             <div class="projects-container-mobile">
                 <div class="project">
@@ -361,7 +383,7 @@
                 </div>
             </div>
         </div>
-        <div class="contact-section">
+        <div class="contact-section" id="js-contact-section">
             <h2 class="section-heading">Contact</h2>
             <p class="contact-text">Are you interested in hearing more about me? Do not hesitate to contact me using email or any social media listed below.</p>
             <div class="socials-container">
