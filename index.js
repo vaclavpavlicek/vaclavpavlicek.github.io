@@ -22,12 +22,10 @@ window.openMenu = function() {
     menuItemsElement.classList.toggle('visible');
     const menuButton = document.getElementById('js-menu-button');
     menuButton.classList.toggle('closed-menu');
-    console
+    updateBodyOverflow();
 };
 
 window.mainLinkClicked = function() {
-    console.log("menuOpened");
-    console.log(menuOpened);
     if (menuOpened) {
         const menuButton = document.getElementById('js-menu-button');
         menuButton.classList.toggle('closed-menu');
@@ -43,6 +41,7 @@ window.mainLinkClicked = function() {
             behavior: 'smooth'
         });
     }
+    updateBodyOverflow();
 }
 
 window.menuItemClicked = function(id) {
@@ -55,4 +54,16 @@ window.menuItemClicked = function(id) {
     window.scrollTo({
         top: section.offsetTop - 48,
     });
+    updateBodyOverflow();
+}
+
+window.updateBodyOverflow = function() {
+    const bodyElements = document.getElementsByTagName("body");
+    if (bodyElements.length > 0) {
+        if (menuOpened) {
+            bodyElements[0].style.overflow = "hidden";
+        } else {
+            bodyElements[0].style.overflow = "";
+        }
+    }
 }
