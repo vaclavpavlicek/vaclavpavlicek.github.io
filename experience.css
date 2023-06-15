@@ -67,7 +67,7 @@
     }
 
     .experiences-section .experiences-container .odd-experiences-container  .experience-item, .experiences-section .experiences-container .even-experiences-container .experience-item {
-        height: 250px;
+        height: 300px;
     }
 
     .experiences-section .experiences-container .odd-experiences-container .experience-item.hide, .experiences-section .experiences-container .even-experiences-container .experience-item.hide {
@@ -88,7 +88,7 @@
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-        padding-bottom: 125px;
+        padding-bottom: 150px;
     }
 
     .experiences-section .experiences-container .odd-experiences-container .experience-item, .experiences-section .experiences-container .even-experiences-container .experience-item {
@@ -111,7 +111,7 @@
         align-self: flex-end;
         flex-direction: column;
         align-items: flex-start;
-        padding-top: 125px;
+        padding-top: 150px;
     }
 
     .experiences-section .experiences-container .even-experiences-container .experience-item {
@@ -126,6 +126,10 @@
 
     .experiences-section .experiences-container .even-experiences-container .experience-item .content {
         padding-left: 32px;
+    }
+
+    .experiences-section .experiences-container .odd-experiences-container .experience-item .content {
+        padding-right: 32px;
     }
 }
 
@@ -162,5 +166,9 @@
 
     .experiences-section .experiences-container .even-experiences-container .experience-item .content {
         padding-left: 72px;
+    }
+
+    .experiences-section .experiences-container .odd-experiences-container .experience-item .content {
+        padding-right: 72px;
     }
 }
