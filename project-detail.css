@@ -38,7 +38,7 @@
 
 .project-detail-container .main-content-container .project-description-container .project-text {
     line-height: 1.75rem;
-    text-align: justify;
+    text-align: left;
 }
 
 .project-detail-container .main-content-container .main-link-container {
