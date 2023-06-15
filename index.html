@@ -18,24 +18,53 @@
   </head>
   <body>
     <nav class="navbar">
-        <div class="navbar-container">    
-            <div class="main-link-container">
-                <a href="#" class="main-link">Václav Pavlíček &nbsp; &#x1F6F0 &#x1F4BB</a>
+        <div class="mobile-navbar-container">
+            <div class="mobile-navbar-row">
+                <div class="main-link-container">
+                    <a href="#" class="main-link">Václav Pavlíček</a>
+                </div>
+                <div>
+                    <button class="menu-button closed-menu" onclick="openMenu()" id="js-menu-button">
+                        <img class="menu-icon menu-open" src="./images/menu_open.svg" alt="Menu open"/>
+                        <img class="menu-icon menu-close" src="./images/menu_close.svg" alt="Menu close"/>
+                    </button>
+                </div>
             </div>
-            <div class="menu-items">
-                <button class="menu-item" onclick="scrollToSection('js-about-section')">
+            <div id="js-mobile-menu-items" class="mobile-navbar-items">  
+                <button class="menu-item" onclick="menuItemClicked('js-about-section')">
                     About me
                 </button>
-                <button class="menu-item" onclick="scrollToSection('js-experiences-section')">
+                <button class="menu-item" onclick="menuItemClicked('js-experiences-section')">
                     Experiences
                 </button>
-                <button class="menu-item" onclick="scrollToSection('js-projects-section')">
+                <button class="menu-item" onclick="menuItemClicked('js-projects-section')">
                     Projects
                 </button>
-                <button class="menu-item" onclick="scrollToSection('js-contact-section')">
+                <button class="menu-item" onclick="menuItemClicked('js-contact-section')">
                     Contact
                 </button>
             </div>
+        </div>
+        <div class="desktop-navbar-container">
+            <div class="desktop-navbar-row">
+                <div class="main-link-container">
+                    <a href="#" class="main-link">Václav Pavlíček &nbsp; &#x1F6F0 &#x1F4BB</a>
+                </div>
+                <div class="menu-items">
+                    <button class="menu-item" onclick="scrollToSection('js-about-section')">
+                        About me
+                    </button>
+                    <button class="menu-item" onclick="scrollToSection('js-experiences-section')">
+                        Experiences
+                    </button>
+                    <button class="menu-item" onclick="scrollToSection('js-projects-section')">
+                        Projects
+                    </button>
+                    <button class="menu-item" onclick="scrollToSection('js-contact-section')">
+                        Contact
+                    </button>
+                </div>
+            </div>            
         </div>
     </nav>
     <main>

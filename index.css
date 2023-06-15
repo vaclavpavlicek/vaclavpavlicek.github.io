@@ -36,10 +36,6 @@ main {
     justify-content: center;
 }
 
-.intro-container .scroll-down-container {
-    margin-top: 64px;
-}
-
 .intro-container .intro-box {
     max-width: 550px;
 }
@@ -54,6 +50,8 @@ main {
 
 .intro-container .intro-box .name {
     text-align: center;
+    margin: 4px;
+    font-size: 28px;
 }
 
 .intro-text {
@@ -61,7 +59,8 @@ main {
 }
 
 .intro-picture {
-    max-width: 256px;
+    margin-top: 60px;
+    max-width: 150px;
     border-radius: 50%;
 }
 
@@ -147,7 +146,7 @@ main {
     flex-direction: row;
     flex-wrap: wrap;
     max-width: 500px;
-    margin: 16px;
+    margin: 0 16px 16px 16px;
 }
 
 .intro-picture {
@@ -165,6 +164,7 @@ main {
 .scroll-down-button {
     background: none;
     border: none;
+    margin-top: 4px;
 }
 
 .scroll-down-button:hover {
