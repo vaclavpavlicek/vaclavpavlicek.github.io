@@ -44,3 +44,7 @@
 .project-detail-container .main-content-container .main-link-container {
     padding: 12px 0;
 }
+
+.technologies-list li {
+    margin: 8px 0;
+}
