@@ -4,8 +4,9 @@
 }
     
 .experiences-section .experiences-container {
-        display: flex;
-        flex-direction: row;
+    display: flex;
+    flex-direction: row;
+    margin: 0 24px;
 }
 
 .experiences-section .experiences-container .odd-experiences-container {
