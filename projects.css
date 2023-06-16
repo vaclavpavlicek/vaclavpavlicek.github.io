@@ -34,6 +34,10 @@
     justify-content: space-between;
 }
 
+.projects-container .project .links-container.details-only {
+    justify-content: flex-end;
+}
+
 .projects-container .project .links-container .link {
     color: black;
 }
@@ -67,6 +71,11 @@
     padding: 8px 16px 0;
     flex-direction: row;
     justify-content: space-between;
+}
+
+
+.projects-container-mobile .project .links-container.details-only {
+    justify-content: flex-end;
 }
 
 .projects-container-mobile .project .links-container .link {

@@ -2,6 +2,10 @@
     font-family: 'Raleway', sans-serif;
 }
 
+a:hover {
+    text-decoration: none;
+}
+
 body {
     margin: 0;
 }
@@ -75,7 +79,7 @@ main {
     border-radius: 14px;
     box-shadow: inset 0 0 0 0 black;
     color: black;
-    transition: ease-out 0.2s;
+    transition: ease-out 0.25s;
     padding: 10px;
     text-decoration: none;
     text-align: center;
@@ -158,7 +162,7 @@ main {
 }
 
 .intro-interests li {
-    margin: 8px 0;
+    margin: 12px 0;
 }
 
 .scroll-down-button {
@@ -182,7 +186,7 @@ main {
     border-radius: 14px;
     box-shadow: inset 0 0 0 0 black;
     color: black;
-    transition: ease-out 0.2s;
+    transition: ease-out 0.25s;
     padding: 12px;
     text-decoration: none;
     text-align: center;
@@ -240,6 +244,10 @@ main {
 
 .section-text {
     line-height: 1.75em;
+}
+
+.section-text a:hover {
+    text-decoration: none;
 }
 
 .footer {
