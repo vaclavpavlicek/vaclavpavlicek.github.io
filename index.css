@@ -314,7 +314,7 @@ main {
     }
 
     .intro-container .scroll-down-container {
-        margin-top: 128px;
+        margin-top: 64px;
     }
 
     .about-container {
@@ -351,6 +351,10 @@ main {
 
     .intro-container .intro-box {
         padding-left: 128px;
+    }
+
+    .intro-container .scroll-down-container {
+        margin-top: 64px;
     }
 
     .intro-picture {
