@@ -43,6 +43,9 @@
                 <button class="menu-item" onclick="menuItemClicked('js-experiences-section')">
                     Experiences
                 </button>
+                <button class="menu-item" onclick="menuItemClicked('js-publications-section')">
+                    Publications
+                </button>
                 <button class="menu-item" onclick="menuItemClicked('js-projects-section')">
                     Projects
                 </button>
@@ -63,6 +66,9 @@
                     <button class="menu-item" onclick="scrollToSection('js-experiences-section')">
                         Experiences
                     </button>
+                    <button class="menu-item" onclick="scrollToSection('js-publications-section')">
+                        Publications
+                    </button>
                     <button class="menu-item" onclick="scrollToSection('js-projects-section')">
                         Projects
                     </button>
@@ -78,11 +84,11 @@
             <div class="intro-wrapper">
                 <div class="intro-box">
                     <h1 class="name">Václav Pavlíček</h1>
-                    <p class="intro-text">I am a third-year Electronic and Information Engineering student at Imperial College London interested in the following topics:</p>
+                    <p class="intro-text">I am a final-year Electronic and Information Engineering student at Imperial College London interested in the following topics:</p>
                     <ul class="intro-interests">
+                        <li>&#x1F4F6 Signal processing</li>
                         <li>&#x1F6F0 Space exploration</li>
                         <li>&#x1F4BB Programming</li>
-                        <li>&#x1F4F6 Signal processing</li>
                         <li>&#x26A1 Electronics</li>
                     </ul>
                     <div class="socials-container">
@@ -118,15 +124,15 @@
                 <div class="odd-experiences-container">
                     <div class="experience-item">
                         <div class="content">
-                            <h2 class="item-title">Imperial College London Research Placement</h2>
-                            <h3 class="item-date">2023 (ongoing)</h3>
-                            <p class="item-text">Working in the research group of Dr Ayush Bhandari on developing algorithms for Unlimited Sensing Framework in <b>MATLAB</b> and investigating ideas from published literature.</p>
+                            <h2 class="item-title">Imperial College London Research Placement (6 months)</h2>
+                            <h3 class="item-date">2023</h3>
+                            <p class="item-text">Worked in the research group of Dr Ayush Bhandari on developing algorithms for Unlimited Sensing Framework in <b>MATLAB</b> and investigated ideas from published literature.</p>
                         </div>
                         <div class="dot"></div>
                     </div>
                     <div class="experience-item hide">
                         <div class="content">
-                            <h2 class="item-title">European Space Operations Centre – Student intern</h2>
+                            <h2 class="item-title">European Space Operations Centre – Student intern (3 months)</h2>
                             <h3 class="item-date">2022</h3>
                             <p class="item-text">Developed automation tools for mission INTEGRAL using <b>Python</b> and <b>pytest</b> and published a&nbsp;paper describing the tools.</p>
                         </div>
@@ -165,6 +171,22 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="publications-section" id="js-publications-section">
+            <h2 class="section-heading">Publications</h2>
+            <div class="publications-container">
+                <ul class="publications-list">
+                    <li class="publication">V. Pavlíček, R. Guo, and A. Bhandari, “<b>Bits, Channels, Frequencies and Unlimited Sens-
+                        ing: Pushing the Limits of Sub-Nyquist Prony</b>,” in <em>(to appear) 32nd European Signal
+                        Processing Conference (EUSIPCO)</em>, Aug. 2024.</li>
+                    <li class="publication">V. Pavlíček and A. Bhandari, “<b>Sparse Sampling in Fractional Fourier Domain: Recovery
+                        Guarantees and Cramér–Rao Bounds</b>,” <em>IEEE Signal Processing Letters</em>, 2024. DOI:
+                        <a href="https://ieeexplore.ieee.org/abstract/document/10522876">10.1109/LSP.2024.3398372</a>.</li>
+                    <li class="publication">V. Pavlíček and S. De Padova, “<b>Integral mission - automation of transponder swaps
+                        scheduling and schedule validation</b>,” <em>Journal of Student Research</em>, vol. 12, no. 1, Feb.
+                        2023. DOI: <a href="https://www.jsr.org/index.php/path/article/view/1843">10.47611/jsr.v12i1.1843</a></li>
+                </ul>
             </div>
         </div>
         <div class="projects-section" id="js-projects-section">
@@ -277,7 +299,7 @@
                     <div class="project-content">
                         <div class="project-text-content">
                             <h3 class="project-title">Flight computer</h3>
-                            <p class="project-text">I work on a&nbsp;rocket flight computer project with Imperial College Space Society colleagues. This flight computer will be placed and mounted in the rocket and will record telemetry from the rocket and it will transmit data from the rocket to the ground station.</p>
+                            <p class="project-text">I worked on a&nbsp;rocket flight computer project with Imperial College Space Society colleagues. This flight computer was mounted in the rocket and it recorded telemetry and transmited data from the rocket to the ground station.</p>
                         </div>
                         <div class="links-container">
                             <a class="link" href="https://github.com/ImperialSpaceSociety/Flight-Computer" target="_blank">GitHub</a>

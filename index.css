@@ -264,6 +264,22 @@ main {
     color: white;
 }
 
+.publications-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.publications-container .publications-list {
+    margin: 16px;
+}
+
+.publications-container .publications-list .publication {
+    margin: 8px 0;
+    line-height: 1.5;
+}
+
 @media only screen and (min-width: 768px){
     .socials-container {
         margin: 0 16px 16px 16px;
@@ -272,6 +288,10 @@ main {
     .social-button {
         margin-top: 16px;
         margin-right: 16px;
+    }
+
+    .publications-container .publications-list {
+        max-width: 850px;
     }
 }
 
@@ -339,7 +359,6 @@ main {
         font-size: 36px;
         text-align: center;
     }
-    
 }
 
 @media only screen and (min-width: 1440px) {
