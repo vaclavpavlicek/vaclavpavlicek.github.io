@@ -36,18 +36,15 @@
                     </button>
                 </div>
             </div>
-            <div id="js-mobile-menu-items" class="mobile-navbar-items">  
-                <button class="menu-item" onclick="menuItemClicked('js-about-section')">
-                    About me
-                </button>
-                <button class="menu-item" onclick="menuItemClicked('js-experiences-section')">
-                    Experiences
-                </button>
+            <div id="js-mobile-menu-items" class="mobile-navbar-items">
                 <button class="menu-item" onclick="menuItemClicked('js-publications-section')">
                     Publications
                 </button>
-                <button class="menu-item" onclick="menuItemClicked('js-projects-section')">
-                    Projects
+                <button class="menu-item" onclick="scrollToSection('js-awards-section')">
+                    Awards
+                </button>
+                <button class="menu-item" onclick="menuItemClicked('js-experiences-section')">
+                    Experiences
                 </button>
                 <button class="menu-item" onclick="menuItemClicked('js-contact-section')">
                     Contact
@@ -60,17 +57,14 @@
                     <a href="#" class="main-link">Václav Pavlíček</a>
                 </div>
                 <div class="menu-items">
-                    <button class="menu-item" onclick="scrollToSection('js-about-section')">
-                        About me
-                    </button>
-                    <button class="menu-item" onclick="scrollToSection('js-experiences-section')">
-                        Experiences
-                    </button>
                     <button class="menu-item" onclick="scrollToSection('js-publications-section')">
                         Publications
                     </button>
-                    <button class="menu-item" onclick="scrollToSection('js-projects-section')">
-                        Projects
+                    <button class="menu-item" onclick="scrollToSection('js-awards-section')">
+                        Awards
+                    </button>
+                    <button class="menu-item" onclick="scrollToSection('js-experiences-section')">
+                        Experiences
                     </button>
                     <button class="menu-item" onclick="scrollToSection('js-contact-section')">
                         Contact
@@ -84,15 +78,15 @@
             <div class="intro-wrapper">
                 <div class="intro-box">
                     <h1 class="name">Václav Pavlíček</h1>
-                    <p class="intro-text">I am a final-year Electronic and Information Engineering student at Imperial College London interested in the following topics:</p>
+                    <p class="intro-text">I am a PhD candidate at Department of Electrical and Electronic Engineering at Imperial College London under the supervision of <a class="intro-link" href="https://alumni.media.mit.edu/~ayush/">Dr Ayush Bhandari</a>.<br>I am interested in the following research topics:</p>
                     <ul class="intro-interests">
-                        <li>&#x1F4F6 Signal processing</li>
-                        <li>&#x1F6F0 Space exploration</li>
-                        <li>&#x1F4BB Programming</li>
-                        <li>&#x26A1 Electronics</li>
+                        <li>Computational Sensing</li>
+                        <li>Unlimited Sampling</li>
+                        <li>Radar Signal Processing</li>
                     </ul>
                     <div class="socials-container">
                         <a href="https://www.linkedin.com/in/vendaskycz/" class="social-button linkedin" target="_blank">LinkedIn</a>
+                        <a href="https://scholar.google.com/citations?user=-ugjFQ4AAAAJ" class="social-button scholar" target="_blank">Google Scholar</a>
                         <a href="https://github.com/vaclavpavlicek" class="social-button github" target="_blank">GitHub</a>
                         <a href="https://twitter.com/VendaskyCZ" class="social-button twitter" target="_blank">Twitter</a>
                         <a href="https://www.instagram.com/vendaskycz/" class="social-button instagram" target="_blank">Instagram</a>
@@ -100,23 +94,82 @@
                     </div>
                 </div>
                 <div class="intro-picture-container">
-                    <img class="intro-picture" src="./images/profile-picture.jpg" />
+                    <img class="intro-picture" src="./images/my-photo.jpg" />
                 </div>
             </div>
             <div class="scroll-down-container">
-                <button class="scroll-down-button" onclick="scrollToSection('js-about-section')">
+                <button class="scroll-down-button" onclick="scrollToSection('js-publications-section')">
                     <img src="./images/arrow_down.svg" alt="arrow_down">
                 </button>
             </div>
         </div>
-        <div class="about-container" id="js-about-section">
-            <div class="content-container">
-                <h2 class="section-heading">About me</h2>
-                <p class="section-text">I am a&nbsp;third-year Electronic and Information Engineering student at Imperial College London interested in signal processing, algorithms, electronics and space exploration. Currently, I&nbsp;am undertaking a&nbsp;research placement with <a href="http://alumni.media.mit.edu/~ayush/">Dr Ayush Bhandari</a>. The main goal of the placement is to develop algorithms that improve Unlimited Sampling Framework. In the summer of 2022, I&nbsp;interned at European Space Operations Centre in Darmstadt on a&nbsp;mission INTEGRAL. I&nbsp;developed a&nbsp;mission planning validation tool and transponder swap scheduling to help to automate the operations processes. I&nbsp;published a&nbsp;<a href="https://doi.org/10.47611/jsr.v12i1.1843" target="_blank">paper</a> about this work. I&nbsp;am looking for PhD opportunity, and I&nbsp;am open to any vacancies that align with my previously mentioned interests.</p>
-                <div class="button-container">
-                    <a href="./CV.pdf" class="button" target="_blank">View CV</a>
-                </div>
-            </div>            
+        <div class="publications-section" id="js-publications-section">
+            <h2 class="section-heading">Publications</h2>
+            <div class="publications-container">
+                <ul class="publications-list">
+                    <li class="publication">
+                        <b>V. Pavlíček</b> and A. Bhandari, “Gesture Recognition with USF-Radars: Modulo Pre-Processing Enhances
+                        Classification,” in <em>Radar Conference (RadarConf25)</em>. IEEE, Oct. 2025, pp. 1–6. DOI: <a href="https://doi.org/10.1109/RadarConf2559087.2025.11204889">10.1109/RadarConf2559087.2025.11204889</a></li>
+                    <li class="publication">
+                        <b>V. Pavlíček</b> and A. Bhandari, “1-Bit Unlimited Sampling Beyond Fourier Domain: Low-Resolution Sampling of Quantization Noise,”
+                        <em>IEEE J. Sel. Topics Signal Process.</em>, vol. 19, no. 6, pp. 1133–1145, Sep. 2025. DOI: <a href="https://doi.org/10.1109/JSTSP.2025.3603969">10.1109/JSTSP.2025.3603969</a></li>
+                    <li class="publication"><b>V. Pavlíček</b>, R. Guo, and A. Bhandari, “Bits, Channels, Frequencies and Unlimited Sensing: Pushing the Limits of Sub-Nyquist Prony,” in <em>32nd European Signal
+                        Processing Conference (EUSIPCO)</em>, Aug. 2024. DOI: <a href="https://doi.org/10.23919/EUSIPCO58035.2024.10522876">10.23919/EUSIPCO58035.2024.10522876</a></li>
+                    <li class="publication"><b>V. Pavlíček</b> and A. Bhandari, “Sparse Sampling in Fractional Fourier Domain: Recovery
+                        Guarantees and Cramér–Rao Bounds,” <em>IEEE Signal Processing Letters</em>, 2024. DOI:
+                        <a href="https://ieeexplore.ieee.org/abstract/document/10522876">10.1109/LSP.2024.3398372</a>.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="awards-section" id="js-awards-section">
+            <h2 class="section-heading">Awards</h2>
+            <div class="awards-container">
+                <ul class="awards-list">
+                    <li class="award">
+                        IEEE Signal Processing Society Scholarship 2025
+                    <li class="award">
+                        EPSRC PhD Scholarship 2024 - 2028
+                    <li class="award">
+                        Heidelberg Laureate Forum Young Researcher 2024
+                    </li>
+                    <li class="award">
+                        Ivor Tupper Prize for Excellence in signal processing, broadcasting and video technology 2024
+                    </li>
+                    <li class="award">
+                        IEEE SPS Travel Grant for SPAWC 2024
+                    </li>
+                    <li class="award">
+                        EUSIPCO 2024 Student Travel Grant
+                    </li>
+                    <li class="award">
+                        Imperial College Trust Conference Grant 2024
+                    </li>
+                    <li class="award">
+                        1st place at IEEE ACDS Imperial Conference 2023
+                    </li>
+                    <li class="award">
+                        Dean's List for Academic Excellence in 2022 and 2023
+                    </li>
+                    <li class="award">
+                        Head of Department’s Prize for the Best Second Year Group Project 2022
+                    </li>
+                    <li class="award">
+                        Head of Department’s Prize for the Best First Year Group Project 2021
+                    </li>
+                    <li class="award">
+                        Bakala Foundation Scholarship for Undergraduate Studies 2020 - 2024
+                    </li>
+                    <li class="award">
+                        Czech High School Student of the year 2020 - 3rd place
+                    </li>
+                    <li class="award">
+                        ESA Astro Pi Challenge 2019-20 Finalist - TOP 10 of all 545 international teams
+                    </li>
+                    <li class="award">
+                        ESA CanSat International Competition 2019 - Best Outreach Award and Award for the Final Report
+                    </li>
+                </ul>
+            </div>
         </div>
         <div class="experiences-section" id="js-experiences-section">
             <h2 class="section-heading">Experiences</h2>
@@ -173,280 +226,12 @@
                 </div>
             </div>
         </div>
-        <div class="publications-section" id="js-publications-section">
-            <h2 class="section-heading">Publications</h2>
-            <div class="publications-container">
-                <ul class="publications-list">
-                    <li class="publication">V. Pavlíček, R. Guo, and A. Bhandari, “<b>Bits, Channels, Frequencies and Unlimited Sens-
-                        ing: Pushing the Limits of Sub-Nyquist Prony</b>,” in <em>(to appear) 32nd European Signal
-                        Processing Conference (EUSIPCO)</em>, Aug. 2024.</li>
-                    <li class="publication">V. Pavlíček and A. Bhandari, “<b>Sparse Sampling in Fractional Fourier Domain: Recovery
-                        Guarantees and Cramér–Rao Bounds</b>,” <em>IEEE Signal Processing Letters</em>, 2024. DOI:
-                        <a href="https://ieeexplore.ieee.org/abstract/document/10522876">10.1109/LSP.2024.3398372</a>.</li>
-                    <li class="publication">V. Pavlíček and S. De Padova, “<b>Integral mission - automation of transponder swaps
-                        scheduling and schedule validation</b>,” <em>Journal of Student Research</em>, vol. 12, no. 1, Feb.
-                        2023. DOI: <a href="https://www.jsr.org/index.php/path/article/view/1843">10.47611/jsr.v12i1.1843</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="projects-section" id="js-projects-section">
-            <h2 class="section-heading">Projects</h2>
-            <div class="projects-container-mobile">
-                <div class="project">
-                    <h3 class="project-title">Flight computer</h3>
-                    <div class="image-container">
-                        <img class="project-image" src="./images/projects/cards/flight-computer.jpg" alt="Flight computer"/>
-                    </div>
-                    <div class="links-container">
-                        <a class="link" href="https://github.com/ImperialSpaceSociety/Flight-Computer" target="_blank">GitHub</a>
-                        <a class="link" href="./flight-computer-project-detail.html">Details</a>
-                    </div>
-                </div>
-                <div class="project">
-                    <h3 class="project-title">Human voice synthesiser</h3>
-                    <div class="image-container">
-                        <img class="project-image" src="./images/projects/cards/human-voice-synthesiser.jpg" alt="Human voice synthesiser"/>
-                    </div>
-                    <div class="links-container details-only">
-                        <a class="link" href="./synthesiser-project-detail.html">Details</a>
-                    </div>
-                </div>
-                <div class="project">
-                    <h3 class="project-title">INTEGRAL automation</h3>
-                    <div class="image-container">
-                        <img class="project-image" src="./images/projects/cards/integral.jpg" alt="INTEGRAL automation"/>
-                    </div>
-                    <div class="links-container">
-                        <a class="link" href="https://doi.org/10.47611/jsr.v12i1.1843" target="_blank">Paper</a>
-                        <a class="link" href="./integral-project-detail.html">Details</a>
-                    </div>
-                </div>
-                <div class="project">
-                    <h3 class="project-title">2nd year Rover Project</h3>
-                    <div class="image-container">
-                        <img class="project-image" src="./images/projects/cards/rover.jpg" alt="Rover"/>
-                    </div>
-                    <div class="links-container">
-                        <a class="link" href="https://github.com/ICL-Year-2-Project-2021-2022" target="_blank">GitHub</a>
-                        <a class="link" href="./rover-project-detail.html">Details</a>
-                    </div>
-                </div>
-                <div class="project">
-                    <h3 class="project-title">Compiler project</h3>
-                    <div class="image-container">
-                        <img class="project-image" src="./images/projects/cards/compiler.jpg" alt="Compiler"/>
-                    </div>
-                    <div class="links-container">
-                        <a class="link" href="https://github.com/MPVP-Code/Compiler" target="_blank">GitHub</a>
-                        <a class="link" href="./compiler-project-detail.html">Details</a>
-                    </div>
-                </div>
-                <div class="project">
-                    <h3 class="project-title">Caperture</h3>
-                    <div class="image-container">
-                        <img class="project-image" src="./images/projects/cards/caperture.jpg" alt="Caperture"/>
-                    </div>
-                    <div class="links-container">
-                        <a class="link" href="https://www.youtube.com/watch?v=VesxRHlxAxI." target="_blank">Video</a>
-                        <a class="link" href="./caperture-project-detail.html">Details</a>
-                    </div>
-                </div>
-                <div class="project">
-                    <h3 class="project-title">Lumiroq</h3>
-                    <div class="image-container">
-                        <img class="project-image" src="./images/projects/cards/ICSS.jpg" alt="Lumiroq"/>
-                    </div>
-                    <div class="links-container">
-                        <a class="link" href="https://2021.spaceappschallenge.org/challenges/statements/when-light-curves-throw-us-curve-balls/teams/imperial-rocks/project" target="_blank">Website</a>
-                        <a class="link" href="./lumiroq-project-detail.html">Details</a>
-                    </div>
-                </div>
-                <div class="project">
-                    <h3 class="project-title">1st year CPU Project</h3>
-                    <div class="image-container">
-                        <img class="project-image" src="./images/projects/cards/year-1-project.jpg" alt="1st-year CPU Project"/>
-                    </div>
-                    <div class="links-container details-only">
-                        <a class="link" href="./cpu-project-detail.html">Details</a>
-                    </div>
-                </div>
-                <div class="project">
-                    <h3 class="project-title">ESA Astro Pi 2020</h3>
-                    <div class="image-container">
-                        <img class="project-image" src="./images/projects/cards/astro-pi-ndvi-photo.jpg" alt="Astro Pi NDVI photo"/>
-                    </div>
-                    <div class="links-container">
-                        <a class="link" href="https://gitlab.com/pardubice-pi1">GitLab</a>
-                        <a class="link" href="./esa-astro-pi-detail.html">Details</a>
-                    </div>
-                </div>
-                <div class="project">
-                    <h3 class="project-title">ESA CanSat</h3>
-                    <div class="image-container">
-                        <img class="project-image" src="./images/projects/cards/cansat.jpg" alt="Astro Pi NDVI photo"/>
-                    </div>
-                    <div class="links-container">
-                        <a class="link" href="https://github.com/charles-the-forth">GitHub</a>
-                        <a class="link" href="./esa-cansat-detail.html">Details</a>
-                    </div>
-                </div>
-            </div>
-            <div class="projects-container">
-                <div class="project">
-                    <div class="image-container">
-                        <img class="project-image" src="./images/projects/cards/flight-computer.jpg" alt="Flight computer"/>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-text-content">
-                            <h3 class="project-title">Flight computer</h3>
-                            <p class="project-text">I worked on a&nbsp;rocket flight computer project with Imperial College Space Society colleagues. This flight computer was mounted in the rocket and it recorded telemetry and transmited data from the rocket to the ground station.</p>
-                        </div>
-                        <div class="links-container">
-                            <a class="link" href="https://github.com/ImperialSpaceSociety/Flight-Computer" target="_blank">GitHub</a>
-                            <a class="link" href="./flight-computer-project-detail.html">Details</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project">
-                    <div class="image-container">
-                        <img class="project-image" src="./images/projects/cards/human-voice-synthesiser.jpg" alt="Human voice synthesiser"/>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-text-content">
-                            <h3 class="project-title">Human voice synthesiser</h3>
-                            <p class="project-text">Within the group of two, we developed a&nbsp;human voice synthesiser in Simulink and MATLAB. The synthesiser was based on Linear Predictive Coding (LPC) - a&nbsp;method used during audio transmission (mobile phones or audio conferencing applications).</p>
-                        </div>
-                        <div class="links-container details-only">
-                            <a class="link" href="./synthesiser-project-detail.html">Details</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project">
-                    <div class="image-container">
-                        <img class="project-image" src="./images/projects/cards/integral.jpg" alt="Human voice synthesiser"/>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-text-content">
-                            <h3 class="project-title">INTEGRAL automation</h3>
-                            <p class="project-text">During my 3-month summer internship at European Space Operations Centre, I developed two Python tools - a&nbsp;mission plan checker and a&nbsp;transponder swap scheduler. Both projects ensure that the safety limits of the satellite are not violated.</p>
-                        </div>
-                        <div class="links-container">
-                            <a class="link" href="https://doi.org/10.47611/jsr.v12i1.1843" target="_blank">Paper</a>
-                            <a class="link" href="./integral-project-detail.html">Details</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project">
-                    <div class="image-container">
-                        <img class="project-image" src="./images/projects/cards/rover.jpg" alt="Rover project image"/>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-text-content">
-                            <h3 class="project-title">2nd year Rover Project</h3>
-                            <p class="project-text">My main responsibility was to work on the ESP32 control code which integrated different subsystems together and was used to control the rover. I established communication between FPGA and ESP32 and Wi-Fi communication between ESP32 and a web server.</p>                                
-                        </div>
-                        <div class="links-container">
-                            <a class="link" href="https://github.com/ICL-Year-2-Project-2021-2022" target="_blank">GitHub</a>
-                            <a class="link" href="./rover-project-detail.html">Details</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project">
-                    <div class="image-container">
-                        <img class="project-image" src="./images/projects/cards/compiler.jpg" alt="Compiler project"/>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-text-content">
-                            <h3 class="project-title">Compiler project</h3>
-                            <p class="project-text">As part of the Instruction Architecture and Compilers module, our task was to write C&#8209;to&#8209;MIPS Compiler in a&nbsp;group of two. The compiler was written in C++ with the use of Bison and Yacc. Our compiler received the 5th highest score out of 60 compilers.</p>
-                        </div>
-                        <div class="links-container">
-                            <a class="link" href="https://github.com/MPVP-Code/Compiler" target="_blank">GitHub</a>
-                            <a class="link" href="./compiler-project-detail.html">Details</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project">
-                    <div class="image-container">
-                        <img class="project-image" src="./images/projects/cards/caperture.jpg" alt="Caperture"/>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-text-content">
-                            <h3 class="project-title">Caperture</h3>
-                            <p class="project-text">We participated in the Imperial College Space Society hackathon during which we propose a&nbsp;docking system for two spacecrafts. After brainstorming about a&nbsp;couple of ideas we settled on Iris capturing mechanism.</p>
-                        </div>
-                        <div class="links-container">
-                            <a class="link" href="https://www.youtube.com/watch?v=VesxRHlxAxI." target="_blank">Video</a>
-                            <a class="link" href="./caperture-project-detail.html">Details</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project">
-                    <div class="image-container">
-                        <img class="project-image" src="./images/projects/cards/ICSS.jpg" alt="ICSS - Lumiroq logo"/>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-text-content">
-                            <h3 class="project-title">Lumiroq</h3>
-                            <p class="project-text">At the beginning of year 2, I participated in the NASA Space Apps Challenge together with other three colleagues from the Imperial College Space Society. Our project showed the importance of the light curves of asteroids in astronomy.</p>
-                        </div>
-                        <div class="links-container">
-                            <a class="link" href="https://2021.spaceappschallenge.org/challenges/statements/when-light-curves-throw-us-curve-balls/teams/imperial-rocks/project" target="_blank">Website</a>
-                            <a class="link" href="./lumiroq-project-detail.html">Details</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project">
-                    <div class="image-container">
-                        <img class="project-image" src="./images/projects/cards/year-1-project.jpg" alt="1st-year project"/>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-text-content">
-                            <h3 class="project-title">1st year CPU Project</h3>
-                            <p class="project-text">Our team won the Head of Department’s Prize for the Best First Year Group Project. The project involved creating a&nbsp;CPU in a&nbsp;graphical editor ISSIE. I pipelined the CPU and then I also implemented a&nbsp;floating point unit (FPU).</p>
-                        </div>
-                        <div class="links-container details-only">
-                            <a class="link" href="cpu-project-detail.html">Details</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project">
-                    <div class="image-container">
-                        <img class="project-image" src="./images/projects/cards/astro-pi-ndvi-photo.jpg" alt="Astro Pi"/>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-text-content">
-                            <h3 class="project-title">ESA Astro Pi 2020</h3>
-                            <p class="project-text">Our team Pardubice Pi was marked as one of the TOP 10 of all 523 international teams from the Astro Pi competition. We wrote a&nbsp;code to take images of Earth from the ISS and we used the obtained photos to identify the loss of vegetation.</p>
-                        </div>
-                        <div class="links-container">
-                            <a class="link" href="https://gitlab.com/pardubice-pi1">GitLab</a>
-                            <a class="link" href="./esa-astro-pi-detail.html">Details</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project">
-                    <div class="image-container">
-                        <img class="project-image" src="./images/projects/cards/cansat.jpg" alt="CanSat"/>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-text-content">
-                            <h3 class="project-title">ESA CanSat 2019</h3>
-                            <p class="project-text">Our team represented the Czech Republic at the international finals of the ESA CanSat competition 2019. My primary role within the CanSat team was software. I wrote the software for the satellite and ground station in C++.</p>
-                        </div>
-                        <div class="links-container">
-                            <a class="link" href="https://github.com/charles-the-forth">GitHub</a>
-                            <a class="link" href="./esa-cansat-detail.html">Details</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="contact-section" id="js-contact-section">
             <h2 class="section-heading">Contact</h2>
             <p class="contact-text">Are you interested in hearing more about me? Do not hesitate to contact me using email or any social media listed below.</p>
             <div class="socials-container">
                 <a href="https://www.linkedin.com/in/vendaskycz/" class="social-button linkedin" target="_blank">LinkedIn</a>
+                <a href="https://scholar.google.com/citations?user=-ugjFQ4AAAAJ" class="social-button scholar" target="_blank">Google Scholar</a>
                 <a href="https://github.com/vaclavpavlicek" class="social-button github" target="_blank">GitHub</a>
                 <a href="https://twitter.com/VendaskyCZ" class="social-button twitter" target="_blank">Twitter</a>
                 <a href="https://www.instagram.com/vendaskycz/" class="social-button instagram" target="_blank">Instagram</a>

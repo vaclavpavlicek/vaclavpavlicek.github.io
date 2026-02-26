@@ -1,6 +1,6 @@
 var menuOpened = false;
 window.scrollToAbout = function () {
-  var aboutSection = document.getElementById("about-container");
+  var aboutSection = document.getElementById("js-publications-section");
   window.scrollTo({
     top: aboutSection.offsetTop,
     behavior: 'smooth'
